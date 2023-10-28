@@ -1,16 +1,15 @@
-# Título do Projeto
+Página de Receitas
 
-`CURSO`
+Análise e Desevolvimento de Sistemas. 
 
-`DISCIPLINA`
+1° Semestra
 
-`SEMESTRE`
+Projetamos um site de Receitas aonde o usuário devidamente cadastrado tem acesso a um livro de receitas online que conecta com uma comunidade gastronomica.
+Lá, ele consegue ter acesso a suas receitas favoritas, consegue compartilha-las para a comunidade e fazer anotações na sua receita salva. 
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
 
-## Integrantes
 
-* Nome completo do aluno 1
+* Igor Daniel Tintureiro Alves.
 * Nome completo do aluno 2
 * Nome completo do aluno 3
 * Nome completo do aluno 4
