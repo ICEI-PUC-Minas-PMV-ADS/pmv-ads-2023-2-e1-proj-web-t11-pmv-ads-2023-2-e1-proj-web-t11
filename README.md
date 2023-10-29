@@ -10,7 +10,7 @@ Lá, ele consegue ter acesso a suas receitas favoritas, consegue compartilha-las
 
 
 * Igor Daniel Tintureiro Alves.
-* Nome completo do aluno 2
+* Erika Rocha Negreiros
 * Nome completo do aluno 3
 * Nome completo do aluno 4
 * Nome completo do aluno 5
