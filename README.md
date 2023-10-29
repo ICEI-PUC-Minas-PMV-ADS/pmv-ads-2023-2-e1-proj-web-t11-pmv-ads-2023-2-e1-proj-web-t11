@@ -2,23 +2,17 @@ Página de Receitas
 
 Análise e Desevolvimento de Sistemas. 
 
-1° Semestra
+1° Semestre
 
 Projetamos um site de Receitas aonde o usuário devidamente cadastrado tem acesso a um livro de receitas online que conecta com uma comunidade gastronomica.
 Lá, ele consegue ter acesso a suas receitas favoritas, consegue compartilha-las para a comunidade e fazer anotações na sua receita salva. 
 
 
-
 * Igor Daniel Tintureiro Alves.
 * Erika Rocha Negreiros
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
 
-## Orientador
 
-* Nome completo do professor
+Camila Cristina Gonçalves
 
 # Documentação
 
