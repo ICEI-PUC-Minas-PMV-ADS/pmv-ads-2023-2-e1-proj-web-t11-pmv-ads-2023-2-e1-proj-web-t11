@@ -12,7 +12,7 @@ Lá, ele consegue ter acesso a suas receitas favoritas, consegue compartilha-las
 * Erika Rocha Negreiros
 
 
-Camila Cristina Gonçalves
+Clóvis Lemos Tavares
 
 # Documentação
 
