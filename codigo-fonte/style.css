@@ -41,3 +41,45 @@ body {
 #content p {
     margin: 10px 0;
 }
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .form-wrapper {
+    padding: 50px;
+    background-color: #ccc;
+  }
+  
+  .titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .campo {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .botao {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logo {
+    width: 100px;
+    margin: 20px auto;
+  }
+  
