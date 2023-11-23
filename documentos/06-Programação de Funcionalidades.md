@@ -1,44 +1,19 @@
 # Programação de Funcionalidades
 
-Implementação da aplicação descritas por meio dos requisitos codificados. 
 
-[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
-
-### Título da funcionalidade
-
-[Adicione imagem da funcionalidade/tela]
-
-
-#### Requisito atendido
-
-[RF-X: adicione a descrição do requisito atendido]
-
-
-#### Artefatos da funcionalidade
-
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
-
-
-#### Estrutura de Dados
-
-[Caso exista estrutura de dados, adicione aqui]
-
-## Login
+## Login 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t11-pmv-ads-2023-2-e1-proj-web-t11/assets/149336734/39af3f35-0108-46bf-9b38-7abf4239159b)
 
 #### Requisito atendido
 Requisito RF02: Permitir acesso dos vendedores
 
-#### Instruções de acesso
+#### link de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
-
+file:///C:/Users/negre/OneDrive/Documentos/Programa%C3%A7%C3%A3o/front_end/HTML/Login%20do%20Usu%C3%A1rio/login.html
 
 #### Responsável
 
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
-
-
+Erika Negreiros
 
 
 > **Links Úteis**:
