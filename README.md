@@ -1,18 +1,19 @@
-Página de Receitas
+CADASTRO DE RECEITAS
 
-Análise e Desevolvimento de Sistemas. 
+Curso: Análise e Desevolvimento de Sistemas. 
 
 1° Semestre
 
-Projetamos um site de Receitas aonde o usuário devidamente cadastrado tem acesso a um livro de receitas online que conecta com uma comunidade gastronomica.
-Lá, ele consegue ter acesso a suas receitas favoritas, consegue compartilha-las para a comunidade e fazer anotações na sua receita salva. 
+DISCIPLINA: Desenvolvimento de Aplicação Web Front-End.
 
+Projetamos um software de cadastro simplificado de vendas e geração de relatórios de receitas do fluxo de caixa de microempresas e empresas de pequeno porte
 
+Alunos:
 * Igor Daniel Tintureiro Alves.
 * Erika Rocha Negreiros
 
 
-Clóvis Lemos Tavares
+Orientador: Clóvis Lemos Tavares
 
 # Documentação
 
