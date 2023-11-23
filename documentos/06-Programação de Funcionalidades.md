@@ -15,6 +15,20 @@ file:///C:/Users/negre/OneDrive/Documentos/Programa%C3%A7%C3%A3o/front_end/HTML/
 
 Erika Negreiros
 
+## Nota Fiscal de origem da receita
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t11-pmv-ads-2023-2-e1-proj-web-t11/assets/149336734/37a43708-4d3c-40a3-93a9-776dd041b906)
+
+
+#### Requisito atendido
+Requisito RF11: Informar a nota fiscal de origem da receita
+
+#### link de acesso
+file:///C:/Users/negre/OneDrive/Documentos/Programa%C3%A7%C3%A3o/front_end/HTML/Tela%20de%20Cadastro/venda_fit.html
+
+#### Responsável
+
+Erika Negreiros
+
 
 > **Links Úteis**:
 > - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
