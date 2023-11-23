@@ -16,3 +16,10 @@
 ## Blackground
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t11-pmv-ads-2023-2-e1-proj-web-t11/assets/149336734/1fea0ed5-34c3-46b6-98f6-efaecc5c52fc)
+
+
+## Página Inicial para cadastrar nova venda
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t11-pmv-ads-2023-2-e1-proj-web-t11/assets/149336734/117a6d84-81b3-4ef6-873c-1a89d01c86dd)
+
+
