@@ -23,6 +23,11 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 [Caso exista estrutura de dados, adicione aqui]
 
+### Login
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t11-pmv-ads-2023-2-e1-proj-web-t11/assets/149336734/39af3f35-0108-46bf-9b38-7abf4239159b)
+
+# Requisito atendido
+Requisito RF02: Permitir acesso dos vendedores
 
 #### Instruções de acesso
 
