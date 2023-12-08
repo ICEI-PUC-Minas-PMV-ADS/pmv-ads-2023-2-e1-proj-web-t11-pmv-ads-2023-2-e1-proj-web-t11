@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Vendas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #41533b;
+            color: #fff;
+            padding: 5px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            height: 40px;
+    
+        }
+
+        header h2 {
+            margin: 0;
+            height: 30px; 
+            line-height: 30px;
+            font-size: 15px;
+            font-style: normal;
+            font-family:'Times New Roman', Times, serif ;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .resumo {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .codigo-pedido {
+            color: #333;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .info-produto {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .info-produto label {
+            display: block;
+            margin-bottom: 0;
+        }
+
+        .info-produto input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 0;
+            box-sizing: 0;
+            border: none; 
+            border-radius: 0;
+            font-size: 15px;
+            text-align: left;
+
+        }
+        .quantidade-x-valor {
+            display: flex;
+            align-items:center;
+            color:#f5f5f5;
+        }
+
+        .quantidade-x-valor input {
+            flex: 1;
+            margin-right: 0;
+            margin-left: 0;
+            margin-right: 0;
+            text-align: justify;
+        }
+
+        .quantidade-x-valor label {
+            flex: 1; 
+            margin-left: 0;
+          
+        }
+
+        .quantidade-x-valor input {
+            flex: 1; 
+            text-align: right;
+        }
+
+        .valor-total input {
+            width: 100%;
+            padding: auto;
+            color: #333;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    
+        #valor-total {
+         font-size: 15px;
+         font-weight: bold;
+         text-align: right;
+}
+        hr {
+            border: 1px solid #41533b;
+            margin: 10px 0;
+        }
+        .valor-unitario {
+            color:#333;
+        }
+
+
+    /*Adcionar estilos para área de meio de pagamento*/
+    
+        .escolher {
+            text-align: left;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            
+        }
+
+        .opcao-pagamento {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            margin-top: 20px;
+    
+        }
+
+        .opcao-pagamento img {
+            margin-right: 10px;
+            width: 25px;
+        }
+
+        .opcao-pagamento label {
+            flex: 1;
+            margin-bottom: 10px;
+        }
+
+        .opcao-pagamento input {
+            margin-right: 5px;
+        }
+
+        /* Adicionar estilos para os botões no final da página */
+        .botoes {
+            margin-top: 20px;
+            display: flex;
+            justify-content:center; /* Alinhar os botões à direita */
+        }
+
+        .botoes button {
+            padding: 10px;
+            margin: 0;
+            cursor: pointer;
+        }
+        .botoes button:first-child {
+            margin-right: 20px;
+        }
+        .botoes button:hover {
+            background-color:bisque;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Confirmação de Vendas</h1>
+        <h2>Vendas CNPJ 027.153.291/00001-21</h2>
+    </header>
+
+    <div class="container">
+        <div class="resumo">Resumo da Venda</div>
+
+        <p>Data do Pedido: <span id="data-pedido"></span></p>
+        <p>Código do Pedido: <span id="codigo-pedido"></span></p>
+
+    <hr>
+
+        <div class="info-produto">
+            <label for="produto">Nome do Produto</label>
+            <input type="text" id="produto" name="produto" readonly>
+            
+            <div class="quantidade-x-valor">
+                <label for="quantidade">Quantidade:</label>
+                <input type="text" id="quantidade" name="quantidade" readonly>
+
+                <label for="valor-unitario">Valor Unitário:</label>
+                <input type="text" id="valor-unitario" name="valor-unitario" readonly>
+            </div>
+    <hr>  
+            <label for="valor-total">Valor Total:</label>
+            <input type="text" id="valor-total" name="valor-total" readonly>
+        
+        
+    </div>
+    <!-- Adicionar área para escolher o meio de pagamento -->
+    <div class="escolher">Escolher Meio de Pagamento</div>
+        <div class="opcao-pagamento">
+            <input type="radio" id="pagar com cartão de crédito" name="pagamento" value="cartao">
+            <img src="C:\Users\negre\OneDrive\Documentos\Programação\front_end\HTML\Login do Usuário\cartão.png" alt="Pagar com Cartão de Crédito">
+            <label for="Pagar com Cartão de Crédito">Pagar com Cartão de Crédito</label>
+        </div>
+
+        <div class="opcao-pagamento">
+            <input type="radio" id="boleto" name="pagamento" value="boleto">
+            <img src="C:\Users\negre\OneDrive\Documentos\Programação\front_end\HTML\Login do Usuário\bilhete-de-estacionamento.png" alt="Pagar com Boleto Bancário">
+            <label for="boleto">Pagar com Boleto</label>
+        </div>
+
+        <div class="opcao-pagamento">
+            <input type="radio" id="pix" name="pagamento" value="pix">
+            <img src="C:\Users\negre\OneDrive\Documentos\Programação\front_end\HTML\Login do Usuário\pixeis.png" alt="Pagar com Pix">
+            <label for="pix">Pagar com pix</label>
+        </div>
+    </div>
+
+    <!-- Adicionar botões no final da página -->
+    <div class="botoes">
+        <button onclick="retornar()">Retornar</button>
+        <button onclick="prosseguir()">Prosseguir</button>
+    </div>
+</div>
+
+    <script>
+        // Função para formatar a data no formato dd/mm/yyyy
+        function formatDate(date) {
+            var day = date.getDate();
+            var month = date.getMonth() + 1; // Os meses começam do zero
+            var year = date.getFullYear();
+
+            return `${day}/${month}/${year}`;
+        }
+
+        // Preencher informações dinâmicas
+        document.getElementById('data-pedido').innerText = formatDate(new Date());
+        document.getElementById('codigo-pedido').innerText = '0001';
+
+        var produto = 'Oculos';
+            var quantidade = 2;
+            var valorUnitario = 170.00;
+
+            // Calculando o valor total
+            var valorTotal = quantidade * valorUnitario;
+
+
+        document.getElementById('produto').value = produto;
+        document.getElementById('quantidade').value = quantidade;
+        document.getElementById('valor-unitario').value = 'R$ ' + valorUnitario.toFixed(2);
+        document.getElementById('valor-total').value = 'R$ ' + valorTotal.toFixed(2);
+
+        // Funções para os botões
+        function retornar() {
+            window.location.href = 'caixa_livre.html'; // Redirecionar para a página caixa_livre.html
+        }
+
+        function prosseguir() {
+            window.location.href = 'Nota_fiscal_produtos.html'; // Redirecionar para a página nota_fiscal_produto.html
+        }
+
+
+    </script>
+
+</body>
+</html>
