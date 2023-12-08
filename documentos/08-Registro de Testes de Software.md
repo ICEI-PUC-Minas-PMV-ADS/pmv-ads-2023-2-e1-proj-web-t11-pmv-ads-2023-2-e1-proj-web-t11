@@ -21,6 +21,21 @@ Relatório com as evidências dos testes de software realizados na aplicação p
 ![Página-de-Login-Google-Chrome-2023-11-26-21-53-37](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t11-pmv-ads-2023-2-e1-proj-web-t11/assets/149336734/ab61738f-194a-4220-b4f6-dc7b4a5629f8)
 
 
+
 ## Cenário de Teste: Aba de vendas
 
+![Caixa-Livre](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t11-pmv-ads-2023-2-e1-proj-web-t11/assets/149336734/3079a276-9dbf-4a27-bf51-2bec8147587e)
+
 ## Cenário de Teste: Visualizar Relatório de vendas
+
+
+## Cenário de Teste: Emissão de Nota Fiscal
+
+![Confirmação-de-Vendas](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t11-pmv-ads-2023-2-e1-proj-web-t11/assets/149336734/f8ed36ec-57fd-4902-981e-cc1411e870fa)
+
+
+## Cenário de Teste: Finalizar Tarefa e Iniciar uma nova venda
+
+![Relatório-da-Nota-Fiscal](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t11-pmv-ads-2023-2-e1-proj-web-t11/assets/149336734/6d335b7c-5877-41cf-ac7c-55e61b123cff)
+
+
