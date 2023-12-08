@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Livre</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #41533b;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #41533b;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #41533b;
+        }
+
+        button#finalizar-venda {
+            width: 100%;
+            background-color: #f5f5f5;
+            color: #333 ;
+            margin-bottom: 10px;
+            margin-top: 25px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Caixa Livre</h1>
+    </header>
+    
+    <div class="container">
+        <label for="produto">Produto:</label>
+        <input type="text" id="produto" name="produto" placeholder="Nome do Produto">
+
+        <label for="CodProduto">Código Produto:</label>
+        <input type="text" id="CodProduto" name="CodProduto" placeholder="idproduto">
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" value="1" min="1" onchange="calcularValorTotal()">
+
+        <label for="preco">Preço Unitário:</label>
+        <input type="text" id="preco" name="preco" placeholder="R$" onchange="calcularValorTotal()">
+
+        <label for="valor total">Valor Total:</label>
+        <input type="text" id="valor" name="valor" placeholder="R$" readonly>
+
+        <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+        <button id="finalizar-venda" type="button" onclick="finalizarVenda()">Finalizar Venda</button>
+    </div>
+
+    <script>
+        function adicionarAoCarrinho() {
+            // Obter os valores inseridos pelo usuário
+            var produto = document.getElementById('produto').value;
+            var CodProduto = document.getElementById('CodProduto').value;
+            var precoUnitario = parseFloat(document.getElementById('preco').value.replace('R$ ', '').replace(',', '.'));
+            var quantidade = parseFloat(document.getElementById('quantidade').value);
+
+            // Verificar se os valores são válidos
+            if (isNaN(precoUnitario) || isNaN(quantidade)) {
+                alert("Digite valores válidos para preço e quantidade.");
+                return;
+            }
+
+            // Preencher os campos com os valores inseridos pelo usuário
+            document.getElementById('preco').value = 'R$ ' + precoUnitario.toFixed(2);
+            document.getElementById('valor').value = 'R$ ' + (quantidade * precoUnitario).toFixed(2);
+        }
+
+        function calcularValorTotal() {
+            var precoUnitario = parseFloat(document.getElementById('preco').value.replace('R$ ', '').replace(',', '.'));
+            var quantidade = parseFloat(document.getElementById('quantidade').value);
+
+            // Verificar se os valores são válidos
+            if (isNaN(precoUnitario) || isNaN(quantidade)) {
+                alert("Digite valores válidos para preço e quantidade.");
+                return;
+            }
+
+            var valorTotal = quantidade * precoUnitario;
+            document.getElementById('valor').value = 'R$ ' + valorTotal.toFixed(2);
+        }
+
+        function finalizarVenda() {
+            // Emitir alerta "Venda finalizada"
+            alert("Venda finalizada");
+
+            // Redirecionar para a página de confirmação_de_vendas
+            window.location.href = 'confirmação_de_vendas.html';
+        }
+    </script>
+
+</body>
+</html>
