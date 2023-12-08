@@ -26,10 +26,8 @@ Relatório com as evidências dos testes de software realizados na aplicação p
 
 ![Caixa-Livre](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t11-pmv-ads-2023-2-e1-proj-web-t11/assets/149336734/3079a276-9dbf-4a27-bf51-2bec8147587e)
 
-## Cenário de Teste: Visualizar Relatório de vendas
 
-
-## Cenário de Teste: Emissão de Nota Fiscal
+## Cenário de Teste: Confirmar vendas e emitir de Nota Fiscal
 
 ![Confirmação-de-Vendas](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t11-pmv-ads-2023-2-e1-proj-web-t11/assets/149336734/f8ed36ec-57fd-4902-981e-cc1411e870fa)
 
