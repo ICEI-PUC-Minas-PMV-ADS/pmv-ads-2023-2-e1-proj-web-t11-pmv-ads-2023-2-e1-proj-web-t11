@@ -19,6 +19,8 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         h2 {
@@ -41,52 +43,130 @@
             background-color: #41533b;
             color: white;
         }
+
+        h3 {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        h4 {
+            margin-top: 5px;
+            text-align: left;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        p {
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: lighter;
+            margin-bottom: 5px;
+        }
+
+        .botoes {
+            margin-top: 20px;
+            display: flex;
+            justify-content:center;
+        }
+
+        .botoes button {
+            padding: 10px;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .botoes button:hover {
+            background-color: bisque;
+        }
+
+        .instrucoes {
+            margin-top: 20px;
+            margin-bottom: 55px;
+            font-size: 8px;
+            color: #555;
+        }
+
+
     </style>
 </head>
 <body>
 
     <div class="container">
         <h2>Relatório da Nota Fiscal</h2>
+        <h4>Vendas CNPJ 027.153.291/00001-21</h4>
 
         <!-- Informações da Nota Fiscal -->
-        <p><strong>Número da Nota Fiscal:</strong> 123456</p>
-        <p><strong>Data de Emissão:</strong> 2023-11-23</p>
-        <p><strong>Cliente:</strong> Nome do Cliente</p>
+        <section>
+            <h3>Detalhes da Nota Fiscal</h3>
+            <p><strong>Número da Nota Fiscal:</strong> 123456</p>
+            <p><strong>Data de Emissão:</strong> <span id="data-emissao"></span></p>
+        </section>
 
-        <!-- Detalhes dos Produtos -->
-        <h3>Itens da Nota Fiscal</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Produto</th>
-                    <th>Quantidade</th>
-                    <th>Preço Unitário</th>
-                    <th>Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Produto A</td>
-                    <td>2</td>
-                    <td>R$ 30,00</td>
-                    <td>R$ 60,00</td>
-                </tr>
-                <tr>
-                    <td>Produto B</td>
-                    <td>1</td>
-                    <td>R$ 50,00</td>
-                    <td>R$ 50,00</td>
-                </tr>
-                <!-- Adicione mais linhas conforme necessário -->
-            </tbody>
-        </table>
+        <!-- Detalhes dos Produtos (Exemplo: Substitua com os valores reais) -->
+        <section>
+            <h3>Itens da Nota Fiscal</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Referência</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Oculos</td>
+                        <td>RF1</td>
+                        <td>R$ 170,00</td>
+                        <td>2</td>
+                        <td>R$ 340,00</td>
+                    </tr>
+                  
+                    <!-- Adicione mais linhas conforme necessário -->
+                </tbody>
+            </table>
+        </section>
 
         <!-- Informações Adicionais -->
-        <h3>Informações Adicionais</h3>
-        <p><strong>Total da Nota Fiscal:</strong> R$ 110,00</p>
-        <p><strong>Forma de Pagamento:</strong> Cartão de Crédito</p>
+        <section>
+            <h3>Informações Adicionais</h3>
+            <p><strong>Total da Nota Fiscal:</strong> R$ 340,00</p>
+            <p><strong>Forma de Pagamento:</strong> <span id="forma-pagamento"></span></p>
+            <div class="instrucoes">
+                <p>1. Confira se todos os dados estão corretos.</p>
+                <p>2. Clique no botão "Finalizar Venda" para concluir o pedido e gerar a nota.</p>
+                <p>3. A nota será impressa.</p>
+            </div>
+        </section>
 
+        <!-- Botão "Finalizar Venda" -->
+        <div class="botoes">
+            <button onclick="finalizarVenda()">Emitir Nota Fiscal</button>
+        </div>
     </div>
+
+    <script>
+        // Função para formatar a data no formato dd/mm/yyyy
+        function formatDate(date) {
+            var day = date.getDate();
+            var month = date.getMonth() + 1;
+            var year = date.getFullYear();
+
+            return `${day}/${month}/${year}`;
+        }
+
+        // Preencher informações dinâmicas
+        document.getElementById('data-emissao').innerText = formatDate(new Date());
+        document.getElementById('forma-pagamento').innerText = 'Pix'; // Substitua pelo valor real
+
+        // Função para finalizar a venda
+        function finalizarVenda() {
+        
+            window.location.href = 'pedido_concluido.html';
+        }
+    </script>
 
 </body>
 </html>
